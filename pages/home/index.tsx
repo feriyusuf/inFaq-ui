@@ -1,5 +1,8 @@
 import { Button, Typography } from "@mui/material";
-import { Navigation, CommonLayout } from "../../components/layout/Layout";
+import { CommonLayout } from "../../components/layout/Layout";
+import Navigation from "../../components/layout/Navigation";
+import Beranda from "../../components/home";
+
 import { loginSxListener, whenAuthorized, logout } from "../../utils/auths";
 import { useState } from "react";
 
@@ -15,7 +18,7 @@ const Home = (props) => {
   return (
     <div>
       <CommonLayout>
-
+        <Beranda/>
       </CommonLayout>
       <Navigation showLabels={true} value={navValue} onChange={onNavigationChange} />
     </div>
