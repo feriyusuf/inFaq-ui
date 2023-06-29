@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { AppBar, Toolbar, Button } from '@material-ui/core'
+import { AppBar, Toolbar, Button } from '@mui/material';
+
 
 const CommonHeader = (props) =>  {
     

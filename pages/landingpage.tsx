@@ -1,4 +1,4 @@
-import { Button, Typography } from "@material-ui/core";
+import { Button, Typography } from "@mui/material";
 import { CommonLayout } from "../components/layout/Layout";
 import { loginSxListener, whenAuthorized, logout } from "../utils/auths";
 
