@@ -19,6 +19,7 @@ const Home = (props) => {
     <div>
       <CommonLayout>
         <Beranda/>
+        <div style={{marginBottom: 50}}/>
       </CommonLayout>
       <Navigation showLabels={true} value={navValue} onChange={onNavigationChange} />
     </div>

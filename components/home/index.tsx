@@ -1,6 +1,7 @@
 import { Grid, Paper } from "@mui/material"
-import TransactionSummary from "../../pages/home/TransactionSummary"
+import TransactionSummary from "./TransactionSummary"
 import React from "react"
+import TransactionChart from "./TransactionChart"
 
 export default (props) => {
     return (
@@ -9,7 +10,7 @@ export default (props) => {
                 <TransactionSummary />
             </Grid>
             <Grid item xs={12}>
-                <TransactionSummary />
+                <TransactionChart />
             </Grid>
         </Grid>
     )
