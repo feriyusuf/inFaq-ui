@@ -4,7 +4,8 @@ import { useState } from "react"
 import { clearStorage } from "../utils/localStorageUtil"
 import { login } from "../utils/auths"
 import { userLogin } from "../functions/user/UserApiCall"
-import { makeStyles, Typography } from "@material-ui/core"
+import { makeStyles } from "@mui/styles"
+import { Typography } from "@mui/material"
 
 const useStyles = makeStyles(theme => ({
   displayHorizontal: {

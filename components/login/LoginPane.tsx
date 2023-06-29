@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
-import { Button, TextField, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Button, TextField, Typography } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
   root: {

@@ -1,4 +1,4 @@
-import { Typography, Button } from '@material-ui/core'
+import { Typography, Button } from '@mui/material'
 import { CommonLayout } from '../components/layout/Layout'
 import Link from "next/link"
 
