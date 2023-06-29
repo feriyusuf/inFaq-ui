@@ -14,7 +14,7 @@ import { handleErrorResponse, handleResponse } from "../functions/api/ApiHandleR
 export const login = (token) => {
   cookie.set("token", token, { expires: 1 / 3 }); //expires in 8 hours
   // cookie.set('token', token) //does not expires
-  Router.push("/landingpage");
+  Router.push("/home");
 };
 
 export const auth = (ctx) => {
