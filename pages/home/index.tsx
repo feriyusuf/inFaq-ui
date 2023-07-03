@@ -2,6 +2,8 @@ import { Button, Typography } from "@mui/material";
 import { CommonLayout } from "../../components/layout/Layout";
 import Navigation from "../../components/layout/Navigation";
 import Beranda from "../../components/home";
+import CashFlow from "../../components/cash-flow";
+
 
 import { loginSxListener, whenAuthorized, logout } from "../../utils/auths";
 import { useState } from "react";
@@ -13,14 +15,19 @@ const Home = (props) => {
     setNavValue(value);
   }
 
+  const menus = [
+    <CommonLayout>
+        <Beranda/>
+    </CommonLayout>,
+    <CashFlow/>
+  ]
+
 
   loginSxListener()
   return (
     <div>
-      <CommonLayout>
-        <Beranda/>
-        <div style={{marginBottom: 50}}/>
-      </CommonLayout>
+      {menus[navValue]}
+      <div style={{marginBottom: 75}}/>
       <Navigation showLabels={true} value={navValue} onChange={onNavigationChange} />
     </div>
   )
